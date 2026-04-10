@@ -1,4 +1,4 @@
-class Flownet < Formula
+class Fnet < Formula
   desc "Flownet CLI tools - shell workflow orchestration, binary management, and service control"
   homepage "https://github.com/fnetai/cli"
   version "1.4.2"
