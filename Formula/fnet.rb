@@ -1,65 +1,65 @@
 class Fnet < Formula
   desc "Flownet CLI tools - shell workflow orchestration, binary management, and service control"
   homepage "https://github.com/fnetai/cli"
-  version "1.4.5"
+  version "1.12.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/fnetai/cli/releases/download/v1.4.5/frun-darwin-arm64.tar.gz"
-      sha256 "db814ee4e72f8854a6982135f827c27896086c938154364628d13f473553b21f"
+      url "https://github.com/fnetai/cli/releases/download/v1.12.1/frun-darwin-arm64.tar.gz"
+      sha256 "da441248ea726202ffbb6d265f2f30e24ae0d8c7b2c03a727b1720d4349362aa"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fbin-darwin-arm64.tar.gz"
-        sha256 "7d4a74b3c80db73d7970baee94372c154f559e7c5aa93de1b4e7e06cdbaa3483"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fbin-darwin-arm64.tar.gz"
+        sha256 "2827c897a6582004d757066479b408c063273e711417e1f6e3457c1e28e590fa"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fservice-darwin-arm64.tar.gz"
-        sha256 "93c19cf8c1a0bb630ba3f4f86cbbedc60b0352477219a3d8e45dfd5facc82269"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fservice-darwin-arm64.tar.gz"
+        sha256 "bd0e93ab16d77b3059137afb612e932f04ac7552bf4cd4581cfce03d970565fc"
       end
     else
-      url "https://github.com/fnetai/cli/releases/download/v1.4.5/frun-darwin-x64.tar.gz"
-      sha256 "bdc8f1acd8b0e34d4651077a282efd1d4fc1b8d30423f8e14a278c8ad5c0b51e"
+      url "https://github.com/fnetai/cli/releases/download/v1.12.1/frun-darwin-x64.tar.gz"
+      sha256 "fca6711b2790cfcba36698b5e06e6a2e193d57b4419f716980651d1192d49b8f"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fbin-darwin-x64.tar.gz"
-        sha256 "8741767ca71f12794a347fae1cd3d4ab922c305fb0df969ded5d0e5a28339266"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fbin-darwin-x64.tar.gz"
+        sha256 "1264eb0a52dd9ad07b4ffb0a428514f914e04937b47e62eca0518d44deeb844f"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fservice-darwin-x64.tar.gz"
-        sha256 "001a82b2f2d353eea3ec6a09d275989ab06c7e0699e26874adf5e6e9627ad9c6"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fservice-darwin-x64.tar.gz"
+        sha256 "1ddf55817cc98e221b873d44fea747da028ebbd9e2ffdcdbd22aa5dbacf92fb5"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/fnetai/cli/releases/download/v1.4.5/frun-linux-arm64.tar.gz"
-      sha256 "760365228ce9bf8b90fd6ee979723b46288e61def87cbf166c445467b0482c50"
+      url "https://github.com/fnetai/cli/releases/download/v1.12.1/frun-linux-arm64.tar.gz"
+      sha256 "d00ccf69f931061953e864a8f86dde8990a4952ddae493c89cea12fae5d3f0a2"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fbin-linux-arm64.tar.gz"
-        sha256 "92bc8d06588538fae39680c3c1b605df2a86389fef651f615edfb5270d87477e"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fbin-linux-arm64.tar.gz"
+        sha256 "af1465a018e7ecb90879e4258f03850d7eab39f059c40f5d18738852bdf6efe0"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fservice-linux-arm64.tar.gz"
-        sha256 "2411e60a811e28eeca0cfcc85146399d42a02dfc75013244f276abaf6b8f7560"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fservice-linux-arm64.tar.gz"
+        sha256 "fb2bd942fd98cad9820642715d9f23294157b58465ddc9a72880fe8edb5b6197"
       end
     else
-      url "https://github.com/fnetai/cli/releases/download/v1.4.5/frun-linux-x64.tar.gz"
-      sha256 "f33325e6a15af3f350db930998d8596c04053c6419e72752025b59359f4d5ded"
+      url "https://github.com/fnetai/cli/releases/download/v1.12.1/frun-linux-x64.tar.gz"
+      sha256 "6a1e520e609cc5d8bca5fbd9f044559f4a7d07baac9208b09fc6b7af0ad15c1e"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fbin-linux-x64.tar.gz"
-        sha256 "7a0e13ec9755c23979e743726b9257e94d642acf257644e599bf9ea403fb1363"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fbin-linux-x64.tar.gz"
+        sha256 "73f6aebd1e4fbf92b3b518d38fc10d7af3a56d64b58ba03e3c671413668cb295"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.4.5/fservice-linux-x64.tar.gz"
-        sha256 "7910aa42defbfde06cbce00d944255c683125d47534282f562663a7c5bf79476"
+        url "https://github.com/fnetai/cli/releases/download/v1.12.1/fservice-linux-x64.tar.gz"
+        sha256 "4f6fb38c7183572f0d2cec3030d0fd2021cd7903a6541871e2a6c744e3d36ebe"
       end
     end
   end
