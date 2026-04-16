@@ -1,110 +1,110 @@
 class Fnet < Formula
   desc "Flownet CLI - development framework that separates Core from Layers"
   homepage "https://github.com/fnetai/cli"
-  version "1.18.0"
+  version "1.18.1"
   license "MIT"
 
   resource "templates" do
-    url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnet-templates.tar.gz"
-    sha256 "9d24c52f4161c3fdfac8154ac99764e85f9c9a6c587173cfa82f5e00af54e608"
+    url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnet-templates.tar.gz"
+    sha256 "2a26f43358b8c0e1e62c77b5294eefc1ae4f94e98eeb1b71e84585d45898bc7b"
   end
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/fnetai/cli/releases/download/v1.18.0/frun-darwin-arm64.tar.gz"
-      sha256 "04af8bf051dad286663305c6c521231bb087362ea1ec10d10b213f83e331caf3"
+      url "https://github.com/fnetai/cli/releases/download/v1.18.1/frun-darwin-arm64.tar.gz"
+      sha256 "7a97eb3819f0ef5c6d66d2aed8ee8eea08dccb57d3ff02326f6194f528154bd3"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fbin-darwin-arm64.tar.gz"
-        sha256 "71b17103eb3456ab7f0ca44a8b71cc6ff84cbc3e8865fcf40738d26537f3df0a"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fbin-darwin-arm64.tar.gz"
+        sha256 "13eb5f843b69fc6eb94dcfd2c7daad829c4e40dc58fb7e025bc5132e59cd2d54"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fservice-darwin-arm64.tar.gz"
-        sha256 "d3f9504ddd8c5dce24759a6d5edf27d17074ebadb6620d3d9007d520d0f8d64a"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fservice-darwin-arm64.tar.gz"
+        sha256 "7f0dab683d8ad4168aa33e3e2b0c85164532effa8a641b7f94973dc293af9ecc"
       end
 
       resource "fnode" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnode-darwin-arm64.tar.gz"
-        sha256 "0436f2c0643ccb7786c3ea1ab2e4bf030e747797015a3f863ddecc928b7c515d"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnode-darwin-arm64.tar.gz"
+        sha256 "e92dcc0e5a4f6b491e50ca4dcc005e8de64d24445ffe7e27318048881f486dd3"
       end
 
       resource "fnet-cli" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnet-darwin-arm64.tar.gz"
-        sha256 "56636e2bd68de71d941ed2e347f6c9bad5f09407c14b3cc78b4e8f0f4c7e9701"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnet-darwin-arm64.tar.gz"
+        sha256 "110cb400a8cd43cf097f78a848493faf5681b13d4c2e0b8279d973e403eee25c"
       end
     else
-      url "https://github.com/fnetai/cli/releases/download/v1.18.0/frun-darwin-x64.tar.gz"
-      sha256 "ba9c51007e6cb5658b368a4063e0b82b8c1f1c57739c32daf412de04479d5ffb"
+      url "https://github.com/fnetai/cli/releases/download/v1.18.1/frun-darwin-x64.tar.gz"
+      sha256 "c8326e02ac874af441d0b51525b61b217cb489c11423e19d865003b98b7024aa"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fbin-darwin-x64.tar.gz"
-        sha256 "ee942a15e1bbaa67dac278759a5fbc28e229746b2d12ca54d4e59f326b068ede"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fbin-darwin-x64.tar.gz"
+        sha256 "024d929e8515ff5c438ef5a603bd2b77540c651165f8b9ce8a864703a5db98a4"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fservice-darwin-x64.tar.gz"
-        sha256 "0adcdd92831707b86b961f3816545891b48c7a28a81584a64e87dc040d8fff50"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fservice-darwin-x64.tar.gz"
+        sha256 "c6d70e60c7b26f8c7a37f86c219a7b340df946209ebf01cee6ea8a52415ad255"
       end
 
       resource "fnode" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnode-darwin-x64.tar.gz"
-        sha256 "861380a77423dccfc891f0085acf2cdca7f82fa99cf647e8a920d1711d6eabfa"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnode-darwin-x64.tar.gz"
+        sha256 "51d47ac171013fb403c651183dd7ff3b7ba393e96716c73e2145c39edc7f1931"
       end
 
       resource "fnet-cli" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnet-darwin-x64.tar.gz"
-        sha256 "0990a6b24593506b893cf7249966207f9e1b3eedd1c67130ce6032bdc29a43ab"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnet-darwin-x64.tar.gz"
+        sha256 "afb62ebc6b7c5095096ebfb9d5fda0469b3af98bd7106d9c371976a5df3e1250"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/fnetai/cli/releases/download/v1.18.0/frun-linux-arm64.tar.gz"
-      sha256 "b361e655d4beb52f3b6aad2c1632f930ccb29d8a4125daa0347b726c5fc1e1d8"
+      url "https://github.com/fnetai/cli/releases/download/v1.18.1/frun-linux-arm64.tar.gz"
+      sha256 "dedef595940f47def482aebc947e1f71be6d05cec6241fc2e992b999b5eb846a"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fbin-linux-arm64.tar.gz"
-        sha256 "753fa1516caa6227b6046dc45fa199c48b51cf4c2fb1a3beb57039afb4ee7ec0"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fbin-linux-arm64.tar.gz"
+        sha256 "341b490d52bbcb2e737cda340280ddefb15e00aab95ce4ef12eab68d14f3fe63"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fservice-linux-arm64.tar.gz"
-        sha256 "7cd8aec9caf86d3375ff1c2904823fcc2851654153f359f8308bb527075776e5"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fservice-linux-arm64.tar.gz"
+        sha256 "17e4e25cf21e6e7b1721fcca6d3e0d6655d6dddc1c25f80e0f95de477786863a"
       end
 
       resource "fnode" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnode-linux-arm64.tar.gz"
-        sha256 "e45f29034b5d751ae5ba08fd36636a48b84d8f7af0ea32c3f857c75da959d89f"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnode-linux-arm64.tar.gz"
+        sha256 "d4a23592ca1cb532f16c53ab6525fd88153edbce6eb098a523342c327950cb61"
       end
 
       resource "fnet-cli" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnet-linux-arm64.tar.gz"
-        sha256 "13983bb90030c77b7ff92460bc107ab116087ce0b967cb59d45645356b3c6430"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnet-linux-arm64.tar.gz"
+        sha256 "2a67683151969240081de7bcd2baca8de334f0019345aeb0bfb03797744b9893"
       end
     else
-      url "https://github.com/fnetai/cli/releases/download/v1.18.0/frun-linux-x64.tar.gz"
-      sha256 "ca02e6242ec33ca336c873248a976f5bedfa39c0a79324c37213e86763acee32"
+      url "https://github.com/fnetai/cli/releases/download/v1.18.1/frun-linux-x64.tar.gz"
+      sha256 "1b8926839e17306316ec9ae90140b69147b31517ef306b859f4e8c022b661721"
 
       resource "fbin" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fbin-linux-x64.tar.gz"
-        sha256 "46e5c9a76b8463d627897cb99331c15e9d980b54c896fbf19f97eb9b478ae174"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fbin-linux-x64.tar.gz"
+        sha256 "16a8cab5412213ec40ed817d1328f728aefbb0ab18eed6312cde00fbbe926255"
       end
 
       resource "fservice" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fservice-linux-x64.tar.gz"
-        sha256 "fc9b38ab8d6b8a92c6a9e4e979ee61c8c3db76147d89c4bb5f79aee17c90b8e8"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fservice-linux-x64.tar.gz"
+        sha256 "3ab9cb0c975bad6862b001b00f315194428882e4de24ba0e2ecbf9a4ee502367"
       end
 
       resource "fnode" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnode-linux-x64.tar.gz"
-        sha256 "86b84d37f25756384b1413601da21a358c2531c3236a650a6d8470e1a7458e53"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnode-linux-x64.tar.gz"
+        sha256 "c6f7b76051d099c0cc3988897c42dd1f863b6d287207d147cb400c013a0ee4bf"
       end
 
       resource "fnet-cli" do
-        url "https://github.com/fnetai/cli/releases/download/v1.18.0/fnet-linux-x64.tar.gz"
-        sha256 "5ae2c48796627a832ae8f87083ffbb8eced313ab33b59629031ec4b85c98d892"
+        url "https://github.com/fnetai/cli/releases/download/v1.18.1/fnet-linux-x64.tar.gz"
+        sha256 "33c2da240a3fd05536740e897767f96743ab80d142a53c451732b381bfd1be01"
       end
     end
   end
